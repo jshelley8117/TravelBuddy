@@ -7,8 +7,6 @@ function Hotels() {
         return (
             <div className="hotels-container">
                 <h1>Hotels</h1>
-                <HotelSearch />
-
             </div>
         );
 }
