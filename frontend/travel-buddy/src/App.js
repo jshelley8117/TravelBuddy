@@ -3,7 +3,11 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Hotels from './pages/Hotels';
 import Flights from "./pages/Flights";
 import Cars from "./pages/Cars";
-import NavBar from "./NavBar";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import InputBar from "./components/InputBar";
+import './components/styles/InputBar.css';
+
 
 
 function App() {
@@ -11,9 +15,11 @@ function App() {
 
     <div className="App">
         <NavBar />
+        <InputBar />
         <Router>
             <Routes>
-                <Route path="/" element={<Hotels />}/>
+                <Route path="/" element={<Home />}/>
+                <Route path="/hotels" element={<Hotels />}/>
                 <Route path="/flights" element={<Flights />}/>
                 <Route path="/cars" element={<Cars />}/>
             </Routes>

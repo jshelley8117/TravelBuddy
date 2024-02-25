@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./assets/tbLogo.png";
+import logo from "../assets/tbLogo.png";
 
 function NavBar() {
     return (
